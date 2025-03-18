@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irshad Khan | Customer Support Expert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2a2a72;
+            --secondary: #009ffd;
+            --accent: #ff7f50;
+            --text: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('https://images.pexels.com/photos/2681319/pexels-photo-2681319.jpeg') fixed center/cover;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .content-block {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .content-block:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+        }
+
+        .timeline-item {
+            border-left: 2px solid var(--secondary);
+            padding-left: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 0.5rem 1rem;
+            margin: 0.3rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: var(--accent);
+            transform: scale(1.05);
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: var(--text);
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            transition: transform 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            transform: translateY(-3px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .content-block {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Irshad Khan</h1>
+            <p class="content-block">🎨 Problem-solving Customer Support Expert | Building Exceptional Experiences</p>
+        </header>
+
+        <section class="content-block">
+            <h2>🌈 About Me</h2>
+            <p>Customer Support Executive with 3+ years experience in resolving complex issues and enhancing customer experiences. Passionate about process optimization and community building.</p>
+        </section>
+
+        <section class="content-block">
+            <h2>💼 Experience</h2>
+            <div class="timeline-item">
+                <h3>Customer Care Executive @ Radical Minds</h3>
+                <p>Sep 2022 - April 2024</p>
+                <ul>
+                    <li>Managed 100+ daily customer interactions across multiple channels</li>
+                    <li>Achieved 95% first-call resolution rate</li>
+                </ul>
+            </div>
+            <!-- Add other timeline items -->
+        </section>
+
+        <section class="content-block">
+            <h2>🔨 Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">CRM Systems</span>
+                <span class="skill-tag">Conflict Resolution</span>
+                <!-- Add other skills -->
+            </div>
+        </section>
+
+        <section class="content-block">
+            <h2>📬 Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:Mrik8090100@gmail.com">Email Me</a>
+                <a href="https://linkedin.com/in/irshad-khan-educationist" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Add email copy functionality
+        document.querySelector('[href^="mailto:"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            navigator.clipboard.writeText('Mrik8090100@gmail.com');
+            alert('Email copied to clipboard!');
+        });
+    </script>
+</body>
+</html>
